@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vk arts desing</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.3/html2pdf.bundle.min.js"
+      integrity="sha512-yu5WG6ewBNKx8svICzUA01vozhmiQCVfzjzW40eCHJdsDRaOifh9hPlWBDex5b32gWCzawTp1F3FJz60ps6TnQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body id="pd">
+    <div id="preenchemento-dados">
+      <div class="dados-clientes"> <!--aqui começa os dados-->
+        <div class="dados-clientes2">
+          <input
+            class="inpus-dados-clientes"
+            type="text"
+            name="input-nome-cliente"
+            id="input-nome-cliente"
+            placeholder="Nome do cliente"
+          />
+          <input
+            class="inpus-dados-clientes"
+            type="text"
+            name="input-nome-cliente"
+            id="input-endereco"
+            placeholder="Endereço"
+          />
+        </div>
+        <div class="dados-clientes3">
+          <input
+            class="inpus-dados-clientes"
+            type="text"
+            name="input-nome-cliente"
+            id="input-bairro"
+            placeholder="Bairro"
+          />
+          <input
+            class="inpus-dados-clientes"
+            type="text"
+            name="input-nome-cliente"
+            id="input-cidade"
+            placeholder="Cidade"
+          />
+          <input
+            class="inpus-dados-clientes"
+            type="text"
+            name="input-nome-cliente"
+            id="input-telefone"
+            placeholder="Telefone"
+          />
+        </div>
+      </div>
+      <section class="section">
+        <input type="number" id="input-quant" placeholder="Quant." min="0" />
+        <input type="text" id="input-descri" placeholder="Descrição" />
+        <input type="number" id="input-unid" placeholder="Valor unit" min="0" />
+        <button onclick="adicionar()">Adicionar</button>
+        <hr />
+      </section>
+      <div class="conteiner-pdf">
+        <button class="btn-limp" onclick="deletar()">Limpar o ultimo</button>
+        <button class="btn-pdf" id="criar" onclick="criarpdf()">Criar PDF</button>
+      </div> <!--aqui fim dos dados-->
+    </div>
+    <div id="pdf">
+      <header>
+        <div id="div-logo">
+          <img src="img/logo-vk.png" alt="logo" id="logo" />
+          <p>Falar com valdemir</p>
+        </div>
+        <div id="informacoes">
+          <p>Talões Personalizados</p>
+          <p>Cartões de visita</p>
+          <p>Etiquetas</p>
+          <div id="telefone">
+            <img src="img/cla.png" alt="logo da claro" class="logo-telcla" />
+            <img src="img/watsapp.png" alt="logo do watsapp" class="logo-tel" />
+            <p>(83) 99334-7632</p>
+          </div>
+        </div>
+      </header>
+      <hr />
+      <div class="div-dadoss">
+        <span id="cli">Cliente:</span>
+        <span id="end">Endereço:</span>
+        <span id="bai">Bairro:</span>
+        <span id="cida">Cidade:</span>
+        <span id="fone">Telefone:</span>
+        <span id="data">Data:</span>
+      </div>
+
+      <main>
+        <div class="quant">
+          <span>Quant.</span>
+          <ul id="ulq"></ul>
+        </div>
+        <div class="desc">
+          <span>Descrição</span>
+          <ul id="uldes"></ul>
+        </div>
+        <div class="unidade">
+          <p>V unid</p>
+          <ul id="uluni"></ul>
+        </div>
+        <div class="total">
+          <span>Total</span>
+          <ul id="ultot"></ul>
+        </div>
+      </main>
+      <footer>
+        <div class="valor-total">
+          <span id="valor-total">Valor Total</span>
+          <p id="valor-total2">0</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

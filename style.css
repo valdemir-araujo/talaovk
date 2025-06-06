@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.section {
+  background-color: rgb(216, 83, 83);
+  width: 90%;
+  padding: 5px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.dados-clientes {
+  margin: auto;
+  width: 90%;
+  background-color: rgb(108, 108, 243);
+}
+.div-dadoss{
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+span{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#pdf {
+  background-color: rgb(228, 224, 190);
+  width: 90%;
+  padding: 20px;
+  margin: auto;
+}
+.conteiner-pdf {
+  background-color: rgb(121, 87, 87);
+  width: 90%;
+  padding: 5px;
+  margin: auto;
+}
+#div-logo {
+  text-align: center;
+}
+#logo {
+  width: 150px;
+}
+#telefone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.logo-tel {
+  width: 25px;
+  margin-right: 5px;
+}
+.logo-telcla {
+  width: 21px;
+  margin-right: 5px;
+}
+hr {
+  margin: 10px 0px;
+  background-color: black;
+  height: 2px;
+  border: 0;
+}
+.quant {
+  width: 80px;
+}
+.desc {
+  width: 430px;
+}
+.unidade {
+  width: 80px;
+}
+.total {
+  width: 80px;
+}
+
+li {
+  list-style-type: none;
+  border: 0.1em solid black;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 0px;
+  text-align: center;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(223, 193, 149);
+}
+#input-quant {
+  padding: 5px;
+  border: 1px solid rgb(160, 159, 159);
+  outline: 0;
+  width: 10%;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin-right: 3px;
+}
+.dados-clientes2 {
+  display: flex;
+}
+.dados-clientes3 {
+  display: flex;
+}
+
+.inpus-dados-clientes {
+  padding: 5px;
+  border: 1px solid rgb(160, 159, 159);
+  outline: 0;
+  border-radius: 5px;
+  width: 40%;
+  font-size: 0.9em;
+  margin-right: 3px;
+  margin: 5px;
+  width: 100%;
+}
+#input-unid {
+  padding: 5px;
+  border: 1px solid rgb(160, 159, 159);
+  outline: 0;
+  border-radius: 5px;
+  width: 10%;
+  font-size: 0.9em;
+  margin-right: 3px;
+}
+#input-descri {
+  padding: 5px;
+  border: 1px solid rgb(160, 159, 159);
+  outline: 0;
+  border-radius: 5px;
+  width: 40%;
+  font-size: 0.9em;
+  margin-right: 3px;
+}
+button {
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(32, 143, 4);
+  color: #fff;
+}
+.btn-limp {
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(143, 4, 4);
+  color: #fff;
+  padding: 10px;
+}
+.btn-limp:hover {
+  background-color: rgb(99, 2, 2);
+}
+button:hover {
+  background-color: rgb(24, 105, 3);
+}
+.valor-total {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 10px;
+}
+#valor-total {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+#valor-total2 {
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 0.13em solid black;
+  padding: 6px;
+  border-radius: 5px;
+  width: 96px;
+  text-align: center;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.conteiner-pdf {
+  display: flex;
+  justify-content: space-between;
+}
